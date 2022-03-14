@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+game = Game.new
+game.waldo=['12','13']
+game.woof=['21','23']
+game.wilma=['11']
+game.whitebeard=['99']
+game.odlaw=['87']
+game.img.attach(io: File.open("../wheres-waldo-frontend/public/waldo.jpeg"), filename: 'waldo.jpeg')
+game.save
